@@ -1,0 +1,29 @@
+.swiper-container-horizontal {
+  .swiper-button-next, .swiper-button-prev {
+    color: #FFBA08;
+  
+    &.swiper-button-disabled {
+      opacity: 0.5;
+    }
+  }
+  
+  .swiper-pagination-bullets {
+    > span.swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      margin: 0 6px;
+      background: #999999;
+      opacity: 1;
+
+      @media only screen and (max-width: 48em) {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+      }
+
+      &-active {
+        background: #FFBA08;
+      }
+    }
+  }
+}
